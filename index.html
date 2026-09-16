@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OViu — a clean player for your IPTV playlists</title>
+<meta name="description" content="OViu is a media player for iPhone, iPad and Mac. Connect the streaming service you already subscribe to and watch it in a player built for Apple devices.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --gold: #e8c76b;
+    --gold-deep: #a3750f;
+    --maroon: #6b1a2b;
+    --ink: #1a1a1c;
+    --muted: #6d6d75;
+    --card: #ffffff;
+    --bg: #faf8f6;
+    --line: #e6e2dd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#f2efea; --muted:#a5a2ac; --card:#17151a; --bg:#0e0d10; --line:#2a2730; }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+  header {
+    background: linear-gradient(160deg, var(--maroon) 0%, #241016 55%, #14090d 100%);
+    color: #fff; padding: 4rem 0 3.25rem; text-align: center;
+  }
+  .mark { display:block; margin: 0 auto .9rem; }
+  h1 { font-size: 2.4rem; margin: 0 0 .35rem; letter-spacing: -.02em; }
+  h1 .o { color: var(--gold); }
+  .tag { color: #e9dfd2; margin: 0 auto; max-width: 30rem; font-size: 1.05rem; }
+  .plat { margin-top: 1.4rem; font-size: .9rem; color: #cbbba9; letter-spacing:.04em; }
+  h2 { font-size: 1.25rem; margin: 2.5rem 0 .6rem; }
+  section { padding-bottom: .5rem; }
+  .grid { display: grid; gap: .9rem; grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr)); margin-top: 1rem; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 1rem 1.1rem; }
+  .card h3 { margin: 0 0 .3rem; font-size: 1rem; }
+  .card p { margin: 0; color: var(--muted); font-size: .93rem; }
+  .note { background: var(--card); border: 1px solid var(--line); border-left: 3px solid var(--gold-deep);
+          border-radius: 10px; padding: 1rem 1.1rem; margin-top: 1.25rem; }
+  footer { margin: 3.5rem 0 3rem; padding-top: 1.5rem; border-top: 1px solid var(--line);
+           color: var(--muted); font-size: .9rem; text-align: center; }
+  footer a { color: inherit; }
+  a { color: var(--gold-deep); }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+</style>
+</head>
+<body>
+
+<header>
+  <svg class="mark" width="76" height="76" viewBox="0 0 100 100" aria-hidden="true">
+    <circle cx="50" cy="50" r="38" fill="none" stroke="#e8c76b" stroke-width="9"/>
+    <path d="M42 34 L70 50 L42 66 Z" fill="#e8c76b"/>
+  </svg>
+  <h1><span class="o">O</span>Viu</h1>
+  <p class="tag">A clean, fast player for the IPTV playlist you already have.</p>
+  <p class="plat">iPhone · iPad · Mac</p>
+</header>
+
+<div class="wrap">
+
+  <section>
+    <h2>What OViu is</h2>
+    <p>
+      OViu is a <strong>media player</strong> — nothing more. You connect the streaming
+      service you already subscribe to, using either your provider's Xtream Codes
+      details or an M3U playlist URL, and OViu plays what your own account gives you.
+    </p>
+    <div class="note">
+      <strong>OViu includes no channels, films, or subscriptions of its own.</strong>
+      It ships empty. You need an account with a provider you already pay for.
+      The OViu subscription pays for the app itself — not for any content.
+    </div>
+  </section>
+
+  <section>
+    <h2>What it does well</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Plays almost anything</h3>
+        <p>Built on VLC, so MKV, HEVC, MPEG-TS and HLS all work without conversion.</p>
+      </div>
+      <div class="card">
+        <h3>Picks up where you left off</h3>
+        <p>Resume playback, Continue Watching, and favourites across Live TV, Movies and Series.</p>
+      </div>
+      <div class="card">
+        <h3>Watch offline</h3>
+        <p>Download films and episodes, with pause and resume. Downloads keep going in the background.</p>
+      </div>
+      <div class="card">
+        <h3>Language, once</h3>
+        <p>Set your preferred audio and subtitle language and OViu applies it to everything you play.</p>
+      </div>
+      <div class="card">
+        <h3>Honest diagnostics</h3>
+        <p>A playback stats overlay shows whether a stall is your connection or the provider's server.</p>
+      </div>
+      <div class="card">
+        <h3>Try before you connect</h3>
+        <p>A built-in demo playlist of free public channels and public domain films, with no account.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Getting started</h2>
+    <p>
+      Open OViu and tap <strong>Add Playlist</strong>, then enter the server address,
+      username and password your provider gave you — or switch to <strong>M3U URL</strong>
+      and paste a playlist link. To look around first, tap
+      <strong>Try Demo Channels</strong>; no account is needed.
+    </p>
+  </section>
+
+  <footer>
+    <p>
+      <a href="support.html">Support</a> &nbsp;·&nbsp;
+      <a href="privacy.html">Privacy Policy</a> &nbsp;·&nbsp;
+      <a href="mailto:adnalrahbi@gmail.com">adnalrahbi@gmail.com</a>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

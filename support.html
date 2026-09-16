@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OViu — Support</title>
+<meta name="description" content="Help and contact for OViu, a media player for iPhone, iPad and Mac.">
+<style>
+  :root {
+    color-scheme: light dark;
+    --gold: #e8c76b; --gold-deep: #a3750f; --maroon: #6b1a2b;
+    --ink: #1a1a1c; --muted: #6d6d75; --card: #ffffff; --bg: #faf8f6; --line: #e6e2dd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#f2efea; --muted:#a5a2ac; --card:#17151a; --bg:#0e0d10; --line:#2a2730; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink);
+         font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  .wrap { max-width: 46rem; margin: 0 auto; padding: 0 1.25rem; }
+  header { background: linear-gradient(160deg, var(--maroon) 0%, #241016 60%, #14090d 100%);
+           color:#fff; padding: 3rem 0 2.25rem; text-align:center; }
+  header h1 { margin:0; font-size:2rem; letter-spacing:-.02em; }
+  header h1 .o { color: var(--gold); }
+  header p { margin:.4rem 0 0; color:#e9dfd2; }
+  h2 { font-size:1.2rem; margin:2.5rem 0 .5rem; }
+  details { background:var(--card); border:1px solid var(--line); border-radius:12px;
+            padding:.85rem 1.1rem; margin-bottom:.6rem; }
+  details summary { cursor:pointer; font-weight:600; }
+  details p { color:var(--muted); margin:.7rem 0 .2rem; }
+  .contact { background:var(--card); border:1px solid var(--line); border-left:3px solid var(--gold-deep);
+             border-radius:10px; padding:1rem 1.1rem; }
+  ul { padding-left:1.2rem; } li { margin:.3rem 0; }
+  footer { margin:3rem 0; padding-top:1.5rem; border-top:1px solid var(--line);
+           color:var(--muted); font-size:.9rem; text-align:center; }
+  a { color: var(--gold-deep); } footer a { color:inherit; }
+  @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+</style>
+</head>
+<body>
+
+<header>
+  <h1><span class="o">O</span>Viu Support</h1>
+  <p>Answers to the questions we get most, and how to reach us.</p>
+</header>
+
+<div class="wrap">
+
+  <h2>Getting started</h2>
+
+  <details open>
+    <summary>How do I add my playlist?</summary>
+    <p>
+      On the sign-in screen tap <strong>Add Playlist</strong>. Choose
+      <strong>Xtream Codes</strong> and enter the server address, username and password
+      your provider gave you (for example <code>http://example.com:8080</code>), or choose
+      <strong>M3U URL</strong> and paste a playlist link. Then tap <em>Save &amp; Connect</em>.
+    </p>
+    <p>
+      OViu ships with no channels of its own — it plays only what your own account
+      gives you access to.
+    </p>
+  </details>
+
+  <details>
+    <summary>Can I try the app without a provider account?</summary>
+    <p>
+      Yes. Tap <strong>Try Demo Channels</strong> on the sign-in screen. It loads a small
+      set of freely available public broadcaster channels and public domain films so you
+      can see how the app works. No account, no sign-up.
+    </p>
+  </details>
+
+  <h2>Playback</h2>
+
+  <details>
+    <summary>Video keeps stalling or buffering</summary>
+    <p>
+      This is nearly always the provider's server sending data more slowly than the video
+      needs — not the app. To check: open the player's settings (the sliders icon) and turn
+      on <strong>Playback Stats</strong>. The overlay compares what is arriving with what
+      the stream needs.
+    </p>
+    <ul>
+      <li><strong>↓ and "server too slow"</strong> — the data isn't arriving fast enough. Pausing for a minute builds a cushion, and downloading the title first always plays smoothly.</li>
+      <li><strong>↑ with a growing buffer</strong> — playback is healthy.</li>
+      <li><strong>"lost" climbing quickly</strong> — the device is struggling to decode; try a lower-quality stream if your provider offers one.</li>
+    </ul>
+  </details>
+
+  <details>
+    <summary>A channel or film won't play at all</summary>
+    <p>
+      Check whether other titles play. If nothing plays, your provider may be blocking your
+      connection, or the account may have reached its device limit. Some providers also
+      restrict access by country, so a different network can give a different result.
+    </p>
+  </details>
+
+  <details>
+    <summary>Can I choose the audio and subtitle language once?</summary>
+    <p>
+      Yes. In the player's settings, set <strong>Audio Language</strong> and
+      <strong>Subtitle Language</strong>; OViu applies your choice to everything you play.
+      "Original" picks the file's first audio track, which is the most reliable option
+      because many providers label their audio tracks incorrectly.
+    </p>
+  </details>
+
+  <h2>Downloads</h2>
+
+  <details>
+    <summary>How do downloads work?</summary>
+    <p>
+      Tap <strong>Download</strong> on any film or episode. Downloads continue while the app
+      is in the background, and downloaded titles play with no internet connection — they're
+      reachable from the sign-in screen without signing in.
+    </p>
+  </details>
+
+  <details>
+    <summary>Why did my download restart instead of resuming?</summary>
+    <p>
+      Resuming requires the provider's server to support partial downloads. Many IPTV servers
+      don't, in which case the download has to start again. When OViu detects this, the paused
+      download is labelled <em>"restarts on resume"</em> so it isn't a surprise.
+    </p>
+  </details>
+
+  <h2>Subscription</h2>
+
+  <details>
+    <summary>What does the OViu subscription include?</summary>
+    <p>
+      It unlocks the OViu app. It does <strong>not</strong> include any TV service, channels,
+      or content — you still need your own provider account.
+    </p>
+  </details>
+
+  <details>
+    <summary>How do I cancel?</summary>
+    <p>
+      Subscriptions are managed by Apple. On iPhone or iPad open
+      <em>Settings › your name › Subscriptions</em>; on Mac open the App Store and click your
+      account. Cancelling there stops any future renewal.
+    </p>
+  </details>
+
+  <details>
+    <summary>I paid but the app is still locked</summary>
+    <p>
+      Open <strong>Settings → Restore Purchases</strong> in the app, making sure you're signed
+      in with the same Apple ID used for the purchase. If it still doesn't unlock, email us
+      with the date of purchase and we'll help.
+    </p>
+  </details>
+
+  <h2>Contact us</h2>
+  <div class="contact">
+    <p style="margin:0 0 .5rem">
+      Email <a href="mailto:adnalrahbi@gmail.com">adnalrahbi@gmail.com</a> — we usually reply
+      within a couple of days.
+    </p>
+    <p style="margin:0; color:var(--muted)">
+      To report a problem, please include your device and OS version, the app version (shown at
+      the bottom of the Settings screen), and what you were doing when it happened. You can send
+      this straight from the app: <em>Settings → Report an error</em> fills in those details for you.
+    </p>
+  </div>
+
+  <footer>
+    <p>
+      <a href="index.html">Home</a> &nbsp;·&nbsp;
+      <a href="privacy.html">Privacy Policy</a>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>
